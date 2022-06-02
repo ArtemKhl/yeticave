@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Май 16 2022 г., 11:12
+-- Время создания: Май 20 2022 г., 11:30
 -- Версия сервера: 5.7.33-log
 -- Версия PHP: 7.1.33
 
@@ -121,6 +121,7 @@ CREATE TABLE `users` (
 INSERT INTO `users` (`id_user`, `date_register`, `email`, `name`, `password`, `avatar`, `contacts`) VALUES
 (1, '2022-05-20 08:30:00', 'pro_us@int.ru', 'Артем', '1fghj3jvhj', 'ded12ge', 'Despo21rhfhf'),
 (2, '2022-05-20 08:30:00', 'dim1996@mail.us', 'Дмитрий', '2343grhfwe3', '23gfveg3hhd', 'er4et45rtgfd');
+(2, '2022-05-20 08:30:00', 'ivan1995@gmail.com', 'Иван', 'fgruy66trh', 'httttthp', 'yu5yyyyyyte');
 
 --
 -- Индексы сохранённых таблиц
@@ -194,6 +195,7 @@ ALTER TABLE `lot`
   ADD CONSTRAINT `lot_ibfk_2` FOREIGN KEY (`id_winner`) REFERENCES `users` (`id_user`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `lot_ibfk_3` FOREIGN KEY (`id_category`) REFERENCES `category` (`id_category`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `lot_ibfk_4` FOREIGN KEY (`id_user`) REFERENCES `users` (`id_user`) ON DELETE CASCADE ON UPDATE CASCADE;
+    each table 'success'
 
 --
 -- Ограничения внешнего ключа таблицы `steps`
